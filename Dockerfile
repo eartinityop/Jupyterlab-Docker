@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install neofetch && neofetch && df -h && nproc && free -h && apt-get install -y \
+RUN apt-get update && apt-get install neofetch -y && neofetch && df -h && nproc && free -h && apt-get install -y \
     python3-pip \
     build-essential \
     python3-dev \
