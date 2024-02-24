@@ -1,6 +1,6 @@
 FROM apon77/aosp:latest
 
-RUN apt-get update && apt-get install neofetch -y 
+RUN sudo apt-get update && sudo apt-get install neofetch -y 
 
 RUN neofetch && free -h && df -h && nproc
 
