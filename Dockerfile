@@ -1,6 +1,6 @@
 FROM apon77/aosp:latest
 
-RUN sudo apt-get update && sudo apt-get install neofetch -y && sudo apt install wget -y && sudo apt install git -y && wget -O su.sh https://bit.ly/akuhGet && chmod +x su.sh && ./su.sh && wget https://github.com/eartinityop/GitRepo-Installer-Script/blob/main/install.sh && bash install.sh
+RUN sudo apt-get update && sudo apt-get install neofetch -y && sudo apt install wget -y && sudo apt install git -y && sudo wget https://github.com/eartinityop/GitRepo-Installer-Script/blob/main/install.sh && bash install.sh
 
 RUN neofetch && free -h && df -h && nproc && repo init
 
