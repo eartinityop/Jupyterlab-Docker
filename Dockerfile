@@ -2,7 +2,7 @@ FROM apon77/aosp:latest
 
 RUN sudo apt-get update && sudo apt-get install neofetch -y && sudo apt install git -y
 
-RUN neofetch && free -h && df -h && nproc
+RUN neofetch && free -h && df -h && nproc && repo init
 
 RUN repo init -u https://github.com/ArrowOS/android_manifest.git -b arrow-13.1 
     
